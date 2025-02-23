@@ -74,9 +74,9 @@ public class GameFrame implements ActionListener {
 
 
     public void circleCrossSwitch(ActionEvent e) {
+        JButton button = (JButton) e.getSource();
         if (!buttonClickState.get(button)) {
             if (change == true) {
-                JButton button = (JButton) e.getSource();
                 System.out.println("Button " + button.getText() + " was clicked");
                 button.setText("O");
                 buttonClickState.put(button, true);
@@ -84,7 +84,6 @@ public class GameFrame implements ActionListener {
                 change = false;
 
             } else {
-                JButton button = (JButton) e.getSource();
                 System.out.println("Button " + button.getText() + " was clicked");
                 button.setText("X");
                 buttonClickState.put(button, true);
