@@ -62,9 +62,6 @@ public class GameFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JButton sourceButton = (JButton) e.getSource();
-//        System.out.println("Button " + sourceButton.getText() + " was clicked");
-//        sourceButton.setText("2");
 
         circleCrossSwitch(e);
 
